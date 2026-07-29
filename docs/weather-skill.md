@@ -1,4 +1,4 @@
-# Time Skill changes
+# Weather Skill changes
 
 This section describes the changes made for the time skill.
 
