@@ -20,7 +20,7 @@ Where:
 | Branch Name | Description |
 | ----------- | ----------- |
 | main | The base branch.  Contains instruction on how to run and setup a bare bones agent |
-| 01_time_skill | Add the time skill so it works. |
+| [01_time_skill](docs/time-skill) | Refactor environment and add the time skill |
 
 ## Directory Layout
 
