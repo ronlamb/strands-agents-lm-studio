@@ -1,0 +1,10 @@
+[project]
+name = "strands-agents-lm-studio"
+version = "0.1.0"
+description = "Strands Agents under LM Studio"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "strands-agents-tools>=0.8.5",
+    "strands-agents[litellm]>=1.50.2",
+]
