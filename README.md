@@ -27,7 +27,7 @@ Where:
 ```
 ├── docs/
 ├── tests/
-└── strands_agent/
+└── simple_agent/
 ```
 
 ## Setting up python and uv
