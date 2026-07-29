@@ -1,6 +1,6 @@
-# Time Skill changes
+# Weather Skill changes
 
-This section describes the changes made for the time skill.
+This section describes the changes made for the weather skill.
 
 ## Refactor environment
 
