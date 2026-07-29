@@ -58,3 +58,55 @@ model = LiteLLMModel(
 ```
 
 This change made minor difference in output, just the randomness of the thinking process and removed icons, but came up with the same joke.
+
+## Final changes
+
+The final change is to move tool to the simple_agent/tools directory, and add logging.
+
+### Move to tools directory
+
+For a simple validation that agents and tools worksetup, keeping the tools in the main module is fine, but in an actual production application, the tools should be kept in a single location.
+
+For this I moved the weather tool from simple_tool.py into simple_agent/tools.
+
+The final version of this is in the file simple_tool_import.py.
+
+### Added logging
+
+The final change was to add logging. The change was simple, just add an import of logging to the import section
+
+```python
+import logging
+import os
+```
+
+And setting the log level.
+
+```python
+# Enables Strands logging
+logging.getLogger("strands").setLevel(logging.INFO)
+
+# Sets the logging format and streams logs to stderr
+logging.basicConfig(
+    format="%(levelname)s | %(name)s | %(message)s",
+    handlers=[logging.StreamHandler()]
+)
+```
+
+The final change showed the following WARNING.
+
+```
+INFO | strands.telemetry.metrics | Creating Strands MetricsClient
+...
+Tool #1: weather
+WARNING | strands.models.openai | reasoningContent is not supported in multi-turn conversations with the Chat Completions API.
+...
+```
+
+There are several work around for this.  
+
+The simplest is under `settings -> Developer`
+
+Unset: "Don't separate `reasoning_content` and `content` in API responses"
+
+For now we'll leave this alone, since it doesn't affect the agents.
