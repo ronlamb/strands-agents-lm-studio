@@ -19,7 +19,7 @@ Where:
 
 | Branch Name | Description |
 | ----------- | ----------- |
-| main | The base branch.  Contains instruction on how to run and setup a bare bones agent |
+| main | The base branch.  Contains instruction on how to run and setup a bare bones agent, as well as the final version of all examples. |
 | [01_weather_skill](docs/weather-skill.md) | Refactor environment and add the weather skill |
 | [02_recipe_bot](docs/recipe-bot.md) | Implement Task Specific Agent - RecipeBot | 
 
