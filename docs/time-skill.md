@@ -41,3 +41,20 @@ Because they make up everything! 😄Why don't scientists trust atoms?
 
 Because they make up everything! 😄
 ```
+
+## Add a system prompt.
+
+The next step is to add a system prompt, again I am using the original system prompt under [01-first-agent](https://github.com/strands-agents/samples/blob/main/python/01-learn/01-first-agent/01-first-agent.ipynb)
+
+```python
+model = LiteLLMModel(
+    client_args={
+        "api_key": LLM_SERVER_API_KEY,
+        "api_base": LLM_SERVER_URL,
+    },
+    model_id=LLM_DEFAULT_MODEL,
+    system_prompt="You are a helpful assistant that provides concise responses."
+)
+```
+
+This change made minor difference in output, just the randomness of the thinking process and removed icons, but came up with the same joke.

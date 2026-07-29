@@ -5,6 +5,7 @@ from strands import Agent
 from strands.models.litellm import LiteLLMModel
 import os
 
+
 LLM_SERVER_URL = os.environ.get("LLM_SERVER_URL", "http://localhost:1234/v1")
 LLM_SERVER_API_KEY = os.environ.get("LLM_SERVER_API_KEY", "none-needed")
 LLM_DEFAULT_MODEL = os.environ.get("LLM_DEFAULT_MODEL", "lm_studio/google/gemma-4-e2b")
@@ -19,7 +20,7 @@ model = LiteLLMModel(
 
 # Create a simple agent instance
 agent = Agent(
-    system_prompt="You are a helpful assistant.",
+    system_prompt="You are a helpful assistant that provides concise responses.",
     model=model,
     tools=[]  # Add custom tools or MCP clients here
 )
