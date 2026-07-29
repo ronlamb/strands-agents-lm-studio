@@ -20,7 +20,8 @@ Where:
 | Branch Name | Description |
 | ----------- | ----------- |
 | main | The base branch.  Contains instruction on how to run and setup a bare bones agent |
-| [01_time_skill](docs/time-skill) | Refactor environment and add the time skill |
+| 01_weather_skill | Refactor environment and add the weather skill |
+| 02_recipe_bot | Implement Task Specific Agent - RecipeBot | 
 
 ## Directory Layout
 
