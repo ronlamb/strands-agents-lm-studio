@@ -5,6 +5,7 @@ description = "Strands Agents under LM Studio"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "ddgs>=9.14.4",
     "strands-agents-tools>=0.8.5",
     "strands-agents[litellm]>=1.50.2",
 ]
