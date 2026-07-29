@@ -1,5 +1,7 @@
+# Simple agent example using Strands and LiteLLMModel
+# Modified from the readme: https://github.com/strands-agents/samples
+
 from strands import Agent
-import litellm
 from strands.models.litellm import LiteLLMModel
 import os
 
