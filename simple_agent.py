@@ -23,5 +23,5 @@ agent = Agent(
 )
 
 # Run the agent with a prompt
-response = agent("What is the current time?")
+response = agent("Hello! Tell me a joke.")
 print(response)

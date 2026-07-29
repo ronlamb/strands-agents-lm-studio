@@ -20,7 +20,7 @@ Where:
 | Branch Name | Description |
 | ----------- | ----------- |
 | main | The base branch.  Contains instruction on how to run and setup a bare bones agent |
-| 01_bare_bones_agent | A very simple bare bones agent to validate that the strands SDK works |
+| 01_time_skill | Add the time skill so it works. |
 
 ## Directory Layout
 
