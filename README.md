@@ -43,3 +43,44 @@ uv add strands-agents-tools
 ```
 
 The dependency strands-agents[litellm], also installs strands agents.
+
+## Run the agent
+
+To run the agent you either activate and run the script.
+
+```
+. .venv/Scripts/activate
+python -m simple_agent
+```
+
+or through uv
+
+```
+uv run simple_agent.py
+```
+
+### Results
+
+```
+Thinking Process:
+
+1.  **Analyze the Request:** The user asked for a joke.
+2.  **Determine the Goal:** Tell a joke that is generally funny and appropriate.
+3.  **Select a Joke Category/Type:** Since I don't know the user's preference, a classic, clean, widely accessible joke (like a knock-knock joke or a simple riddle/setup) works well.
+4.  **Draft Joke Options (Internal Selection):**
+    *   Option A: Knock-knock. (Safe, but sometimes cliché.)
+    *   Option B: Pun/Wordplay. (Good for quick delivery.)
+    *   Option C: Story setup. (More elaborate.)
+5.  **Select a Specific Joke:** I'll go with a slightly silly, observational joke that is quick to deliver. (The invisible man or something similar often works.)
+
+6.  **Refine and Deliver:** (Self-Correction: Let's go with a classic animal joke—they are usually reliable.)
+
+    *   *Idea:* Why don't scientists trust atoms? Because they make up everything! (A bit too sciencey?)
+    *   *Idea:* Why did the scarecrow win an award? Because he was outstanding in his field! (Good, classic.)
+
+7.  **Final Output Generation.** (Using the scarecrow joke.)Why don't scientists trust atoms?
+
+Because they make up everything! 😄Why don't scientists trust atoms?
+
+Because they make up everything! 😄
+```
