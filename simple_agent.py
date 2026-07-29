@@ -17,6 +17,7 @@ model = LiteLLMModel(
     },
     model_id=LLM_DEFAULT_MODEL,
 )
+
 # Create a simple agent instance
 agent = Agent(
     system_prompt="You are a helpful assistant.",
